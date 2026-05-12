@@ -96,6 +96,50 @@ body {
   border-color: hsl(248, 32%, 49%);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+.input-form input.error {
+  border: 2px solid hsl(0, 100%, 74%);
+}
+.error-icon {
+  width: 20px;
+  position: absolute;
+  display: none;
+}
+.first {
+  top: 9%;
+  right: 10%;
+}
+.second {
+  top: 26%;
+  right: 10%;
+}
+.third {
+  top: 43%;
+  right: 10%;
+}
+.fourth {
+  top: 60%;
+  right: 10%;
+}
+.error-message {
+  position: absolute;
+  font-size: 9px;
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  right: 7%;
+  display: none;
+}
+.first-name {
+  top: 17%;
+}
+.last-name {
+  top: 34%;
+}
+.email-error {
+  top: 50%;
+}
+.password-error {
+  top: 67%;
+}
 .submit-button {
   padding: 10px 20px;
   border-radius: 5px;
@@ -105,6 +149,10 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   box-shadow: 1px 2px rgba(0, 0, 0, 0.489);
+}
+.submit-button:hover {
+  background-color: hsla(154, 59%, 51%, 0.779);
+  cursor: pointer;
 }
 .terms {
   position: absolute;
@@ -141,6 +189,9 @@ body {
   }
   .try-button {
     padding: 10px;
+  }
+  .error-icon {
+    right: 15%;
   }
 }
 @media screen and (max-width: 600px) {
